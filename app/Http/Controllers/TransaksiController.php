@@ -39,6 +39,7 @@ class TransaksiController extends Controller
         $cek->kuantity = $request->kuantity;
         $cek->produk_id = $request->produk_id;
         $cek->save();
+
         $client = new \GuzzleHttp\Client();
         $response = $client->request('POST', 'https://sandbox.saebo.id/api/v1/payments', [
             'headers' => [

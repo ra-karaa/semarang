@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     AuthController,
     ProdukController,
-    TransaksiController};
+    TransaksiController,
+    BackgroundController};
 
 
 
@@ -22,6 +23,8 @@ use App\Http\Controllers\{
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/produkss', BackgroundController::class);
 
 Auth::routes(['register' => false, 'login' => false]);
 
