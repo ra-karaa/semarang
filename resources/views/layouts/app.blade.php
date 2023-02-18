@@ -40,7 +40,11 @@
 
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="{{ route('trans.index') }}">Data Transaksi</a>
-                          </li>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ route('transaksi.index') }}">Transaksi</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

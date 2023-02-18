@@ -5,7 +5,9 @@ use App\Http\Controllers\{
     AuthController,
     ProdukController,
     TransaksiController,
-    BackgroundController};
+    BackgroundController,
+    TransController
+    };
 
 
 
@@ -44,6 +46,13 @@ Route::post('/produk-update/{id?}', [ProdukController::class, 'update'])->name('
 Route::get('/transaksi-all', [TransaksiController::class, 'index'])->name('trans.index');
 Route::get('/transaksi-create', [TransaksiController::class, 'create'])->name('trans.create');
 Route::post('/transaksi', [TransaksiController::class, 'store'])->name('trans.store');
+
+Route::get('trans', [TransController::class, 'index'])->name('transaksi.index');
+Route::get('trans/create', [TransController::class, 'create'])->name('transaksi.create');
+Route::post('trans', [TransController::class, 'store'])->name('transaksi.store');
+Route::get('trans/edit/{id}', [TransController::class, 'edit'])->name('transaksi.edit');
+Route::post('trans/update/{id}', [TransController::class, 'update'])->name('transaksi.update');
+Route::get('trans/delete/{id}', [TransController::class, 'delete'])->name('transaksi.delete');
 
 
 

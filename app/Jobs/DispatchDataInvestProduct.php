@@ -47,8 +47,5 @@ class DispatchDataInvestProduct implements ShouldQueue
                 dd('Duplicate Entry');
             }
         }
-
-
-
     }
 }
