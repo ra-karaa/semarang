@@ -6,7 +6,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-md-8 text-start">
-                    Silhkan Lengkapi informasi di bawah
+                    Silhkan Lengkapi informasi di bawah Ini
                 </div>
                 <div class="col-md-4 text-end">
                     <a href="{{ route('trans.index') }}" class="btn btn-primary">
